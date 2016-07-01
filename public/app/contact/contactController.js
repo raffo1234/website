@@ -7,7 +7,7 @@
 
 	ContactController.$inject = ['$scope'];
     function ContactController ($scope) {
-  		console.log("intro");
+
 
     }
 

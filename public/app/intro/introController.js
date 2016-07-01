@@ -7,7 +7,7 @@
 
 	IntroController.$inject = ['$scope'];
     function IntroController ($scope) {
-  		console.log("intro");
+
 
     }
 

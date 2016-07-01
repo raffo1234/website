@@ -7,7 +7,7 @@
 
 	PortfolioController.$inject = ['$scope'];
     function PortfolioController ($scope) {
-  		console.log("intro");
+
 
     }
 
