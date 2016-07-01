@@ -12,7 +12,10 @@
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-       .state('intro',{
+      .state('public', {
+      abstract: true,
+      })
+       .state('public.intro',{
          url: '/',
          abstract: false,
          data: {
@@ -20,13 +23,13 @@
            'title': 'Intro'
          },
          views: {
-           web: {
+           content: {
              templateUrl: 'app/intro/intro.html',
              controller: 'IntroController'
            }
          }
        })
-       .state('about',{
+       .state('public.about',{
          url: '/about',
          abstract: false,
          data: {
@@ -34,13 +37,13 @@
            'title': 'About'
          },
          views: {
-           web: {
+           content: {
              templateUrl: 'app/about/about.html',
              controller: 'AboutController'
            }
          }
        })
-       .state('portfolio',{
+       .state('public.portfolio',{
          url: '/portfolio',
          abstract: false,
          data: {
@@ -48,13 +51,13 @@
            'title': 'Portfolio'
          },
          views: {
-           web: {
+           content: {
              templateUrl: 'app/portfolio/portfolio.html',
              controller: 'PortfolioController'
            }
          }
        })
-       .state('contact',{
+       .state('public.contact',{
          url: '/contact',
          abstract: false,
          data: {
@@ -62,7 +65,7 @@
            'title': 'Contact'
          },
          views: {
-           web: {
+           content: {
              templateUrl: 'app/contact/contact.html',
              controller: 'ContactController'
            }

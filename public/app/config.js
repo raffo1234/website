@@ -8,8 +8,7 @@
   /** @ngInject */
   config.$inject = ['$httpProvider', '$locationProvider', '$validatorProvider'];
   function config($httpProvider, $locationProvider, $validatorProvider) {
-    // $httpProvider.interceptors.push('AuthInterceptor');
-    /*     $locationProvider.html5Mode(true).hashPrefix('!') */
+
 
 
 

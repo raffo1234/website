@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es" class="active" ng-app="main-app" >
     <head>
-        <title>WEBSITE</title>
+        <title>WEBSITE </title>
 
         <meta charset="utf-8">
 
@@ -15,12 +15,16 @@
         <meta name="google-site-verification" content="" />
         <link rel="canonical" href="" />
 
+
         <link rel="stylesheet" href="assets/css/iconmoon.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
         <link rel="icon" href="assets/icons/favicon.png" />
         <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
 
         <!--[if lt IE 9]>
                 <script src="assests/js/html5shiv.js"></script>
@@ -51,7 +55,7 @@
             </div>
         </header>
 
-        <div ui-view="web" id="wrapper"></div>
+        <div ui-view="content" id="wrapper"></div>
 
         <menu class="align_center">
             <div class="helper"></div><!--
@@ -59,9 +63,9 @@
                 <h2>WEBSITE</h2>
                 <p>We create engaging experiences through creativity & craft</p>
                 <ul class="menu-nav">
-                    <li><a ui-sref="portfolio" class="btn-underline" title="Work" on-click-show-menu>WORK</a></li><!--
-                    --><li><a ui-sref="about" class="btn-underline" title="About" on-click-show-menu>ABOUT</a></li><!--
-                    --><li><a ui-sref="contact" class="btn-underline" title="Contact" on-click-show-menu>CONTACT</a></li>
+                    <li><a href="javascript:void(0);" ui-href="public.portfolio" class="btn-underline" title="Work" on-click-show-menu>WORK</a></li><!--
+                    --><li><a href="javascript:void(0);" ui-href="public.about" class="btn-underline" title="About" on-click-show-menu>ABOUT</a></li><!--
+                    --><li><a href="javascript:void(0);" ui-href="public.contact" class="btn-underline" title="Contact" on-click-show-menu>CONTACT</a></li>
                 </ul>
             </div>
         </menu>

@@ -5,15 +5,17 @@
     .module('main-app')
     .run(runBlock);
 
-  runBlock.$inject = ['$log', '$rootScope', '$state', '$location', '$window'];
-  function runBlock($log, $rootScope, $state, $location, $window) {
-    var nextState;
+  runBlock.$inject = ['$log', '$rootScope', '$state', '$location', '$window', '$animate', '$timeout'];
+  function runBlock($log, $rootScope, $state, $location, $window, $animate, $timeout) {
 
-    $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
-
-
+    $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
+      $animate.enabled(false);
+      angular.element('html').addClass('isStateChanging');
     });
 
+    $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+      angular.element('html').removeClass('isStateChanging');
+    });
 
 
     /* ---------------------------------------- */
