@@ -34,9 +34,21 @@
     </head>
     <body class="active">
         <header>
-            <a on-click-show-menu href="javascript:void(0);" title="Menu">
-                menu
-            </a>
+            <div class="display-table">
+                <div class="display-table-cell algin_left">
+                    logo
+                </div>
+                <div class="display-table-cell align_right">
+                    <a on-click-show-menu href="javascript:void(0);" class="btn-menu right" title="Menu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                </div>
+            </div>
         </header>
 
         <div ui-view="web" id="wrapper"></div>
