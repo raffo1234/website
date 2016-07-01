@@ -71,7 +71,7 @@ body.active, html.active {height: 100%;}
 .loading { height: 100%;}
 
 /*HEADER*/
-header{width: 100%; position: absolute; left: 0; right: 0; top: 0; z-index: 10; background-color: darkblue;
+header{width: 100%; position: absolute; left: 0; right: 0; top: 0; z-index: 10;
 padding: 40px;
 }
 
@@ -90,6 +90,10 @@ menu{opacity: 0; visibility: hidden; position: fixed; left: 0; top: 0; width: 10
     transition:opacity .4s ease, visibility .4s ease;
 }
 .isMenuOpened menu{opacity: 1; visibility: visible;}
+menu h2{font-size: 3em; margin-bottom: 28px;}
+.menu-nav {display: block; padding: 30px 15px;}
+.menu-nav li{display: inline-block;}
+
 
 /*BUTTON MENU*/
 .btn-menu{
@@ -192,8 +196,21 @@ menu{opacity: 0; visibility: hidden; position: fixed; left: 0; top: 0; width: 10
 
 /*BUTTONS*/
 .btn-underline{
-  
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  margin: 8px;
+  -webkit-transition:background-color .4s ease, color .4s ease;
+  -moz-transition:background-color .4s ease, color .4s ease;
+  -ms-transition:background-color .4s ease, color .4s ease;
+  -o-transition:background-color .4s ease, color .4s ease;
+  transition:background-color .4s ease, color .4s ease;
 }
+.btn-underline:hover{background-color: #fff; color: 
+#000;}
 
 
 /* PORTFOLIO */
