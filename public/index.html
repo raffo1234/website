@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es" class="active" ng-app="main-app" >
     <head>
-        <title>RMC</title>
+        <title>WEBSITE</title>
 
         <meta charset="utf-8">
 
@@ -38,9 +38,17 @@
                 menu
             </a>
         </header>
+
         <div ui-view="web" id="wrapper"></div>
 
-        <menu></menu>
+        <menu class="align_center">
+            <div class="helper"></div><!--
+            --><ul class="display-inline">
+                <li><a ui-sref="portfolio" title="Work" on-click-show-menu>Work</a></li>
+                <li><a ui-sref="about" title="About" on-click-show-menu>About</a></li>
+                <li><a ui-sref="contact" title="Contact" on-click-show-menu>Contact</a></li>
+            </ul>
+        </menu>
 
 
 
