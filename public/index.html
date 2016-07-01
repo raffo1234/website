@@ -32,9 +32,17 @@
                  </style>
         <![endif]-->
     </head>
-    <body>
+    <body class="active">
+        <header>
+            <a on-click-show-menu href="javascript:void(0);" title="Menu">
+                menu
+            </a>
+        </header>
+        <div ui-view="web" id="wrapper"></div>
 
-        <div ui-view="web"></div>
+        <menu></menu>
+
+
 
         <!-- VENDORS -->
         <script src="assets/js/jquery-2.1.1.min.js"></script>
