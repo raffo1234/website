@@ -1,8 +1,8 @@
 
 @font-face {
-  font-family: 'ACaslonPro-Regular';
-  src: url('../fonts/ACaslonPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ACaslonPro-Regular.otf')  format('opentype'),
-         url('../fonts/ACaslonPro-Regular.woff') format('woff'), url('../fonts/ACaslonPro-Regular.ttf')  format('truetype'), url('../fonts/ACaslonPro-Regular.svg#ACaslonPro-Regular') format('svg');
+  font-family: 'Conv_AUdimat-Regular';
+  src: url('../fonts/AUdimat Regular.eot');
+  src: local('☺'), url('../fonts/AUdimat Regular.woff') format('woff'), url('../fonts/AUdimat Regular.ttf') format('truetype'), url('../fonts/AUdimat Regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -65,14 +65,14 @@ textarea, input[type="text"], input[type="number"], input[type="email"] {-webkit
 .container {max-width: 1350px; margin: 0 auto; padding: 0 15px;}
 
 /* GENERALES */
-* {color: #fff; font-family: 'ACaslonPro-Regular';}
+body {color: #fff; font-family: 'Conv_AUdimat-Regular';}
 body.active, html.active {height: 100%;}
 .main {height: 100%;}
 .loading { height: 100%;}
 
 /*HEADER*/
 header{width: 100%; position: absolute; left: 0; right: 0; top: 0; z-index: 10; background-color: darkblue;
-padding: 20px 30px;
+padding: 40px;
 }
 
 
@@ -189,6 +189,12 @@ menu{opacity: 0; visibility: hidden; position: fixed; left: 0; top: 0; width: 10
   left: calc(50% - 2px);
   top: 15px;
 }
+
+/*BUTTONS*/
+.btn-underline{
+  
+}
+
 
 /* PORTFOLIO */
 .portfolio{padding: 30px 0;}
