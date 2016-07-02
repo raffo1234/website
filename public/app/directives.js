@@ -13,7 +13,6 @@
         link: function(scope, el, attr){
         	var html = angular.element('html');
         	el.on('click', function(e){
-            angular.element('html').addClass('isStateChanging');
             
             if(typeof attr.openClose !== 'undefined'){
           		if(!html.hasClass('isMenuOpened')){
@@ -23,6 +22,7 @@
           		}
             }
             if(attr.uiHref){
+              angular.element('html').addClass('isStateChanging');
               $timeout(function(){
                 $state.go(attr.uiHref);
                 $timeout(function(){
