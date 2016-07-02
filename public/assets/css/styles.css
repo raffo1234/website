@@ -315,6 +315,9 @@ h3{font-size: 1.4rem; margin-bottom: 50px;}
 .item .item-txt .txt .description:before{content: ''; position: absolute; left: 0; top: 8px; width: 40px; height: 10px; background-color: red;}
 
 .item.cyan{background-color: #00BCD4;}
+.item.cyan .item-txt .txt .description:before{background-color: #ff9632;}
+
+
 .item.teal{background-color: #009688;}
 .item.green{background-color: #4CAF50;}
 .item.lime{
