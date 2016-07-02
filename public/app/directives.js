@@ -13,7 +13,7 @@
         link: function(scope, el, attr){
         	var html = angular.element('html');
         	el.on('click', function(e){
-
+            angular.element('html').addClass('isStateChanging');
         		if(!html.hasClass('isMenuOpened')){
         			html.addClass('isMenuOpened');
         		}else{
@@ -22,7 +22,10 @@
             if(attr.uiHref){
               $timeout(function(){
                 $state.go(attr.uiHref);
-              }, 600);
+                $timeout(function(){
+                  angular.element('html').removeClass('isStateChanging');
+                }, 360);
+              }, 360);
             }
         	});
         }

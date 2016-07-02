@@ -40,7 +40,7 @@
         <header>
             <div class="display-table">
                 <div class="display-table-cell algin_left">
-                    <a ui-href="public.intro" href="javascript:void(0);" on-click-show-menu title="Rafael Meza">
+                    <a class="logo" href="javascript:void(0);" on-click-show-menu title="Rafael Meza">
                         <img src="assets/images/logo.png" width="80" title="Rafael Meza">
                     </a>
                 </div>
@@ -57,18 +57,22 @@
             </div>
         </header>
 
-        <div ui-view="content" id="wrapper"></div>
+        <div ui-view="main" id="wrapper"></div>
 
         <menu class="align_center">
             <div class="helper"></div><!--
             --><div class="display-inline">
-                <h2>WEBSITE</h2>
-                <p>We create engaging experiences through creativity & craft</p>
-                <ul class="menu-nav">
-                    <li><a href="javascript:void(0);" ui-href="public.portfolio" class="btn-underline" title="Work" on-click-show-menu>WORK</a></li><!--
-                    --><li><a href="javascript:void(0);" ui-href="public.about" class="btn-underline" title="About" on-click-show-menu>ABOUT</a></li><!--
-                    --><li><a href="javascript:void(0);" ui-href="public.contact" class="btn-underline" title="Contact" on-click-show-menu>CONTACT</a></li>
-                </ul>
+                <main>
+                    <h2>
+                        <img src="assets/images/logo.png" width="107" title="Rafael Meza">
+                    </h2>
+                    <h2>WE CREATE ENGAGING EXPERIENCES THROUGH CREATIVITY & CRAFT</h2>
+                    <ul class="menu-nav">
+                        <li><a href="javascript:void(0);" ui-href="portfolio" class="btn-underline" title="Work" on-click-show-menu>WORK</a></li><!--
+                        --><li><a href="javascript:void(0);" ui-href="about" class="btn-underline" title="About" on-click-show-menu>ABOUT</a></li><!--
+                        --><li><a href="javascript:void(0);" ui-href="contact" class="btn-underline" title="Contact" on-click-show-menu>CONTACT</a></li>
+                    </ul>
+                </main>
             </div>
         </menu>
 

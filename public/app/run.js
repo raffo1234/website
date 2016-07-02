@@ -10,11 +10,11 @@
 
     $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
       $animate.enabled(false);
-      angular.element('html').addClass('isStateChanging');
     });
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-      angular.element('html').removeClass('isStateChanging');
+      
+      
     });
 
 
