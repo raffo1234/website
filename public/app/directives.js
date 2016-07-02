@@ -14,11 +14,14 @@
         	var html = angular.element('html');
         	el.on('click', function(e){
             angular.element('html').addClass('isStateChanging');
-        		if(!html.hasClass('isMenuOpened')){
-        			html.addClass('isMenuOpened');
-        		}else{
-        			html.removeClass('isMenuOpened');
-        		}
+            
+            if(typeof attr.openClose !== 'undefined'){
+          		if(!html.hasClass('isMenuOpened')){
+          			html.addClass('isMenuOpened');
+          		}else{
+          			html.removeClass('isMenuOpened');
+          		}
+            }
             if(attr.uiHref){
               $timeout(function(){
                 $state.go(attr.uiHref);
