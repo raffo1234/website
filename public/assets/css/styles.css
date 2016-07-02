@@ -313,10 +313,21 @@ h3{font-size: 1.4rem; margin-bottom: 50px;}
 .item .item-txt .txt{max-width: 360px; }
 .item .item-txt .txt .description{padding-left: 60px; position: relative;}
 .item .item-txt .txt .description:before{content: ''; position: absolute; left: 0; top: 8px; width: 40px; height: 10px; background-color: red;}
+
 .item.cyan{background-color: #00BCD4;}
 .item.teal{background-color: #009688;}
 .item.green{background-color: #4CAF50;}
-.item.lime{background-color: #CDDC39;}
+.item.lime{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cddc39+0,79d637+100 */
+background: #cddc39; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #cddc39 0%, #79d637 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #cddc39 0%,#79d637 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #cddc39 0%,#79d637 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cddc39', endColorstr='#79d637',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.item.lime .item-txt .txt .description:before{background-color: #89b834;}
+
 .item.amber{background-color: #FFC107;}
 
 
