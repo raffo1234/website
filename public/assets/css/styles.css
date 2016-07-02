@@ -60,9 +60,15 @@ a[href^=tel]{color:inherit;text-decoration:none;}
 input{-webkit-user-select: auto;}
 img { -ms-interpolation-mode: bicubic; }
 :link, :hover, :active, :focus, :visited { outline: 0; }
-::-webkit-selection { color: #fff; background: #ccc; }
-::-moz-selection { color: #fff; background: #ccc; }
-::selection { color: #fff; background: #ccc; }
+::-webkit-selection { color: #fff; background: #555; }
+::-moz-selection { color: #fff; background: #555; }
+::selection { color: #fff; background: #555; }
+::-webkit-scrollbar{-webkit-appearance:none;background:#f3f3f3}
+::-webkit-scrollbar:vertical{width:8px}
+::-webkit-scrollbar:horizontal{height:8px}
+::-webkit-scrollbar-track{background-color:#f3f3f3}
+::-webkit-scrollbar-thumb{background-color:#d9d9de;-webkit-transition:background .5s;-moz-transition:background .5s;-ms-transition:background .5s;transition:background .5s;}
+
 textarea, input[type="text"], input[type="number"], input[type="email"] {-webkit-appearance: none;}
 .left{float: left;}
 .right{float: right;}
@@ -93,7 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c6c6', end
 body {color: #fff; font-family: 'neuzeit-grotesk';
   font-weight: 300;
   font-size: 1.28rem;
-  line-height: 1.28em;
+  line-height: 1.3em;
 }
 h1, h2, a {color: #fff; font-weight: 700;}
 body.active, html.active {height: 100%;}
@@ -141,7 +147,7 @@ menu{opacity: 0; visibility: hidden; position: fixed; left: 0; top: 0; width: 10
 }
 .isMenuOpened menu{opacity: 1; visibility: visible;}
 
-h2{font-size: 4.6rem; margin-bottom: 50px;}
+h2{font-size: 4.6rem; margin-bottom: 50px; line-height: 1em;}
 h3{font-size: 1.4rem; margin-bottom: 50px;}
 .font-medium{font-size: 1.6rem; margin-bottom: 30px;}
 .menu-nav {display: block; padding: 30px 15px;}
@@ -317,7 +323,27 @@ h3{font-size: 1.4rem; margin-bottom: 50px;}
 .item.cyan{background-color: #00BCD4;}
 .item.cyan .item-txt .txt .description:before{background-color: #ff9632;}
 
+.item.lightred{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff432e+0,c90f02+100 */
+background: #ff432e; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ff432e 0%, #c90f02 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ff432e 0%,#c90f02 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ff432e 0%,#c90f02 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff432e', endColorstr='#c90f02',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+
+}
+.item.lightred .item-txt .txt .description:before{background-color: #a81011;}
+
+.item.lightgray{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,e0e0e0+100 */
+background: #f0f0f0; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #f0f0f0 0%, #e0e0e0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #f0f0f0 0%,#e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #f0f0f0 0%,#e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e0e0e0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
 .item.teal{background-color: #009688;}
 .item.green{background-color: #4CAF50;}
 .item.lime{
@@ -347,6 +373,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cddc39', end
 .item.orange .item-txt .txt .description:before{background-color: #7f5408;}
 
 
+.item.darkorange{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b134+0,e5743b+100 */
+background: #f9b134; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #f9b134 0%, #e5743b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #f9b134 0%,#e5743b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #f9b134 0%,#e5743b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b134', endColorstr='#e5743b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.item.darkorange .item-txt .txt .description:before{background-color: #af4109;}
+
+
+
+
 
 /* INTRO */
 .intro{
@@ -366,26 +406,35 @@ background-color: #060e1a;
 color: #7590a0;
 
 }
-.contact h2{
-  font-size: 4.6rem;
-  line-height: 10rem;
-}
 
 
 
 
 /* RESPONSIVE */
 @media only screen and (max-width : 1023px) {
-
+	h2{font-size: 3.6rem;}
+	h3{font-size: 1.1rem;}
 }
 /* Small Devices, Tablets */
+.img_small{display: none;}
 @media only screen and (max-width : 767px) {
+	h2{font-size: 2.8rem;}
+	main{padding-left: 15px; padding-right: 15px;}
+	.item h2{margin-bottom: 40px;}
+	.item h3{margin-bottom: 20px;}
+	.item figure{position: relative;}
+	.img{display: none; }
+	.img_small{display: inline-block; }
 
-
+}
+@media only screen and (max-width : 560px) {
+	h2{font-size: 2.3rem;}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	body{font-size: 1.2rem;}
+	h2{font-size: 1.8rem; margin-bottom: 30px;}
+	.font-medium{font-size: 1.3rem; margin-bottom: 20px;}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
