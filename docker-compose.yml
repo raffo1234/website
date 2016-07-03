@@ -1,17 +1,19 @@
-nginx:
-  image: nginx
-  restart: always
+server_dashboard:
+  container_name: WEBSITE
+  build: .
   ports:
-     - "3000:80"
-  links:
-     - website
-  volumes_from:
-     - website
+    - "8012:8012"
+    - "4433:4433"
+  # links:
+  #   - back_code
+  # volumes_from:
+  #   - back_code
+  volumes:
+  - ./app:/srv/www/website/app
+  - ./public:/srv/www/website/public
 
-website:
-  labels:
-    - "Sitio web"
+back_code:
   image: busybox
   volumes:
-    - ./public/:/usr/share/nginx/html
+    - ./app:/srv/www/website/app
   command: tail -f /dev/null

@@ -1,3 +1,7 @@
-/nbproject/private/
-/public/_projects/haywa/nbproject/private/
-/public/_projects/travelmax/nbproject/private/
+#achivos mac
+.DS_Store
+
+
+
+# Dependency directories
+node_modules
