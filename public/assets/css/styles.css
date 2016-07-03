@@ -283,7 +283,7 @@ h3{font-size: 1.4rem; margin-bottom: 50px;}
 
 /* state-changing */
 .state-changing{
-	position: absolute;
+	position: fixed;
 	z-index: 99;
 	left: 0;
 	top: 0;
