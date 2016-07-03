@@ -9,7 +9,7 @@ module.exports = function(app){
 
 	// HTML5	
 	app.get('*', function(req, res) {
-	  res.redirect('/');
+	  res.sendfile('public/index.html');
 	});
 		
 };
