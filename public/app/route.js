@@ -18,7 +18,7 @@
          abstract: false,
          data: {
            'needAuth': false,
-           'title': 'Rafael Meza'
+           'title': 'Home'
          },
          views: {
            main: {
