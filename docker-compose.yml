@@ -2,7 +2,7 @@ server_dashboard:
   container_name: WEBSITE
   build: .
   ports:
-    - "8012:8012"
+    - "80:8012"
     - "4433:4433"
   # links:
   #   - back_code
