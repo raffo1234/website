@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="es" class="active" ng-app="main-app" >
     <head>
-        <title>WEBSITE </title>
+        <title ng-if="!title">Rafael Meza</title>
+        <title ng-if="title" ng-bind="title + ' &mdash; Rafael Meza'">Rafael Meza</title>
         <base href="/">
         <meta charset="utf-8">
 

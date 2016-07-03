@@ -18,7 +18,7 @@
          abstract: false,
          data: {
            'needAuth': false,
-           'title': 'Intro'
+           'title': 'Rafael Meza'
          },
          views: {
            main: {
@@ -32,7 +32,7 @@
          abstract: false,
          data: {
            'needAuth': false,
-           'title': 'About'
+           'title': 'About me'
          },
          views: {
            main: {

@@ -13,8 +13,10 @@
     });
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-      
-      
+      $rootScope.title = '';
+      if(toState.data && toState.data.title){
+        $rootScope.title = toState.data.title;
+      }
     });
 
 
@@ -24,7 +26,7 @@
     $rootScope.$state = $state;
 
 
-  }
+  } 
 
 
 
