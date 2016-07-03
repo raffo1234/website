@@ -7,8 +7,7 @@
 
 	AboutController.$inject = ['$scope'];
     function AboutController ($scope) {
-  		console.log("about");
-
+  		
     }
 
 })();
