@@ -377,6 +377,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cddc39', end
 }
 .item.orange .item-txt .txt .description:before{background-color: #7f5408;}
 
+.item.renta-2014{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1aa4db+1,57bedb+50,009edf+100 */
+background: #1aa4db; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #1aa4db 1%, #57bedb 50%, #009edf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #1aa4db 1%,#57bedb 50%,#009edf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #1aa4db 1%,#57bedb 50%,#009edf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1aa4db', endColorstr='#009edf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.item.renta-2014 .item-txt .txt .description:before{background-color: #efb30b;}
+
 
 .item.darkorange{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b134+0,e5743b+100 */
