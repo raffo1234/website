@@ -1,5 +1,5 @@
 website-rmc:
-  container_name: WEBSITE
+  container_name: WEBSITE-RMC
   build: .
   ports:
     - "80:8012"
