@@ -1,4 +1,4 @@
-website:
+website-rmc:
   container_name: WEBSITE
   build: .
   ports:
