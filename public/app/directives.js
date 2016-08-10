@@ -19,8 +19,8 @@
                 $state.go(attr.uiHref);
                 $timeout(function(){
                   angular.element('html').removeClass('isStateChanging');
-                }, 300);
-              }, 300);
+                }, 1000);
+              }, 1000);
             }
             if(typeof attr.close !== 'undefined'){
               html.removeClass('isMenuOpened');

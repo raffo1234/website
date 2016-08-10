@@ -10,7 +10,12 @@
   function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $locationProvider.html5Mode(true);
-    $urlRouterProvider.otherwise('/');
+    // $urlRouterProvider.otherwise('/');
+    //fix Infinite $digest Loop if we do preventDefault() in $stateChangeStart event
+    $urlRouterProvider.otherwise( function($injector, $location) {
+        var $state = $injector.get("$state");
+        $state.go("intro");
+    });
 
     $stateProvider
        .state('intro',{

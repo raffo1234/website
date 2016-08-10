@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" class="active" ng-app="main-app" >
+<html lang="es" class="active isStateChanging" ng-app="main-app" >
     <head>
         <title ng-if="!title">Rafael Meza</title>
         <title ng-if="title" ng-bind="title + ' &mdash; Rafael Meza'">Rafael Meza</title>
@@ -16,7 +16,7 @@
         <meta name="google-site-verification" content="" />
         <link rel="canonical" href="" />
 
-
+        <link rel="stylesheet" href="assets/css/animate.css" />
         <link rel="stylesheet" href="assets/css/iconmoon.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -55,7 +55,7 @@
         <header>
             <div class="display-table">
                 <div class="display-table-cell algin_left">
-                    <a class="logo" href="javascript:void(0);" ui-href="intro" on-click-show-menu close title="Rafael Meza">
+                    <a class="logo" href="javascript:void(0);" ui-sref="intro" on-click-show-menu close title="Rafael Meza">
                         <img src="assets/images/logo.png" width="80" title="Rafael Meza">
                     </a>
                 </div>
@@ -71,8 +71,9 @@
                 </div>
             </div>
         </header>
-
-        <div ui-view="main" id="wrapper"></div>
+        <div class="wrapper-view">
+            <div ui-view="main" class="angular-slider-items" id="wrapper"></div>
+        </div>
 
         <menu class="align_center">
             <main>
@@ -83,17 +84,16 @@
                     </h2>
                     <p class="font-medium">I create engaging experiences through creativity, craft & code</p>
                     <ul class="menu-nav">
-                        <li><a href="javascript:void(0);" ui-href="portfolio" class="btn-underline" title="Work" on-click-show-menu open-close>WORK</a></li><!--
-                        --><li><a href="javascript:void(0);" ui-href="about" class="btn-underline" title="About" on-click-show-menu open-close>ABOUT</a></li><!--
-                        --><li><a href="javascript:void(0);" ui-href="contact" class="btn-underline" title="Contact" on-click-show-menu open-close>CONTACT</a></li>
+                        <li><a href="javascript:void(0);" ui-sref="portfolio" class="btn-underline" title="Work" on-click-show-menu open-close>WORK</a></li><!--
+                        --><li><a href="javascript:void(0);" ui-sref="about" class="btn-underline" title="About" on-click-show-menu open-close>ABOUT</a></li><!--
+                        --><li><a href="javascript:void(0);" ui-sref="contact" class="btn-underline" title="Contact" on-click-show-menu open-close>CONTACT</a></li>
                     </ul>
                 </div>
             </main>
         </menu>
-        <div class="state-changing">
-            
-        </div>
-
+        <div class="state-changing bottom"></div>
+        <div class="state-changing"></div>
+        
 
         <!-- VENDORS -->
         <script src="assets/js/jquery-2.1.1.min.js"></script>

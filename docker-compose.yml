@@ -1,19 +1,10 @@
-server_dashboard:
+website:
   container_name: WEBSITE
   build: .
   ports:
     - "80:8012"
     - "4433:4433"
-  # links:
-  #   - back_code
-  # volumes_from:
-  #   - back_code
+
   volumes:
   - ./app:/srv/www/website/app
   - ./public:/srv/www/website/public
-
-back_code:
-  image: busybox
-  volumes:
-    - ./app:/srv/www/website/app
-  command: tail -f /dev/null
