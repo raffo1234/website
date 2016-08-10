@@ -423,6 +423,11 @@ h3 {
   overflow: hidden;
 }
 
+.angular-slider-items {
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
 .angular-slider-items.ng-enter,
 .angular-slider-items.ng-leave {
   position: absolute;
