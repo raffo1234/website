@@ -1,12 +1,9 @@
 (function () {
-    'use strict';
+  "use strict";
 
-    angular
-            .module('main-app')
-            .constant('urls', {
-                BASE: 'http://app.yachay.pe',
-                BASE_API: 'http://dashboard.yachay.dev/api/v1',
-                URL_WEB: 'http://dashboard.yachay.pe:8080'
-            })
-
+  angular.module("main-app").constant("urls", {
+    BASE: "",
+    BASE_API: "",
+    URL_WEB: "",
+  });
 })();
